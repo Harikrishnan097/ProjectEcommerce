@@ -1,0 +1,109 @@
+/* @charset "ISO-8859-1";
+.footer {
+  overflow: hidden;
+  background-color: #EEEEEE;
+  padding: 20px 10px;
+   border-radius:10px;
+     clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
+}
+.footer{
+  margin-top:auto; 
+}
+
+Style the header links
+.footer a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 14px;
+
+  line-height: 25px;
+  border-radius: 4px;
+}
+.footer search {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger
+.footer a.logo {
+  font-size: 25px;
+  font-weight: bold;
+ width: 170px;
+  height: 38px;
+  background-image:url(../images/logo.svg);
+}
+
+Change the background color on mouse-over
+.footer a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+Style the active/current link
+.footer a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+nextln {
+   display: block;
+   margin: 3px 0;
+}
+
+Float the link section to the right
+.footer-right {
+  float: right;
+}
+Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other
+@media screen and (max-width: 500px) {
+  .header2 a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .footer-right {
+    float: none;
+  }
+}
+.card-pricing.popular {
+    z-index: 1;
+    border: 3px solid #007bff;
+}
+.card-pricing .list-unstyled li {
+    padding: .5rem 0;
+    color: #6c757d;
+} */
+html{ height:100%; }
+body{ min-height:100%; padding:0; margin:0; position:relative; }
+
+body::after{ content:''; display:block; height:100px; }
+
+footer{ 
+  position:absolute; 
+  bottom:0; 
+  width:100%; 
+  height:100px; 
+}
+
+
+/* FOR DEMO ONLY */
+body{ font:bold 1.2em/2.5 arial; text-align:center; }
+label{ cursor:pointer; display:inline-block; transition:1s ease; }
+:checked ~ label{ margin-bottom:1400px; }
+
+article{ width:40%; margin:0 auto; color:#444; }
+header{ background:#C7DD8B; height:50px; }
+footer{ background:#DB8A8A; }
